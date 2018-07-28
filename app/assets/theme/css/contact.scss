@@ -1,0 +1,116 @@
+/*---------------------------------*/
+/*          contact-section        */
+/*---------------------------------*/
+.contact-section {
+}
+
+/*---------------------------------*/
+/*            form col             */
+/*---------------------------------*/
+.form-col {
+    position:relative;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box label {
+    padding: 0 0 15px 0;
+    font-size: 130%;
+    margin: 5px 0;
+    font-weight: 300;
+    z-index: 999;
+    cursor: text;
+}
+
+.input-box input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 50%;
+    padding: 35px 0px 10px 10px;
+    color: #000;
+    font-size: 130%;
+    transition: border-bottom 0.5s, font-size 0.5s;
+    margin-bottom: 5px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.input-box input:focus { 
+    border-bottom: 1px solid #ff036c;
+    outline: none;
+}
+
+label.active-label {
+    top: 0;
+    font-size: 100%;
+}
+
+/* your-msg-input */
+#your-msg-input {
+    margin-top: 25px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    outline: none;
+    font-size: 120%;
+}
+
+#your-msg-input:focus { 
+    border-bottom: 1px solid #ff036c;
+    outline: none;
+    font-size: 120%;
+}
+
+input#lets-talk {
+    font-size: 150%;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ff036c;
+    padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+    margin: 30px 0;
+}
+
+input#lets-talk:hover { background-color: rgba(255, 3, 108, 0.9) }
+
+/*---------------------------------*/
+/*          contact-icons          */
+/*---------------------------------*/
+.contact-icons {
+    margin-top: 120px;
+}
+
+.contact-icons ul li {
+    list-style: none;
+    margin: 30px;
+}
+
+.contact-icons ul li p {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: text-top;
+}
+
+.contact-icons ul li i {
+    color: #ff036c;
+}
+
+.fa-map-marker {
+    font-size: 160%;
+}
+
+.fa-phone {
+    font-size: 150%;
+}
+
+.fa-envelope { 
+    font-size: 125%;
+}

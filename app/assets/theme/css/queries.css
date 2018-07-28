@@ -1,0 +1,359 @@
+
+				.table-responsive > table{width:100%;  border-collapse: collapse;}
+				.table-responsive > table tr{  border-bottom:1px solid #ccc;  }
+				.table-responsive > table th{ padding:10px; }
+				.table-responsive > table td{ padding:10px; vertical-align:top; }
+				.itemdetails {  }
+				
+/* width screens */
+@media only screen and (max-width: 1550px) { 
+    /* general */    
+    .row { 
+        padding: 0 4%; 
+    }
+    
+    .main-banner-section h1 {
+        font-size: 650%;
+    }
+    
+    /* benefits */
+    .benefit-strong-text {
+        margin-top: 25px;
+        font-size: 150%;
+    }
+
+    .benefit-text {
+        font-size: 95%;
+    }
+    
+    .service-col img { 
+        margin-right: 30px; 
+    }
+
+    .sign-col img { 
+        margin-right: 20px; 
+    }
+    
+    .benefit-section hr { 
+        width: 88%;
+        right: 6%;
+    }
+    
+    /* footer */
+    .mini-title {
+        width: 60%;
+        font-size: 120%;
+    }
+    
+    .loyer-text{ 
+        font-size: 85%;
+        line-height: 1.4;
+    }
+    
+  ul.important-links,  ul.social-links {
+        width: 100%;
+    }
+    
+    ul.social-links li {
+        font-size: 200%;
+    }
+    
+    h4 {
+        font-size: 130%;
+    }
+    
+    .coptrights {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* big tablet to 1240px: widths smaller that the 1140px row */
+@media only screen and (max-width: 1240px) {
+    .main-banner-section h1 {font-size: 500%;    }
+    
+    /* .hero-text-box p { font-size: 150%;    } */
+    
+    .row { padding: 0 4%; }
+    
+     /* benefits */
+    .benefit-strong-text {
+        margin-top: 25px;
+        font-size: 125%;
+    }
+
+    .benefit-text {font-size: 80%;    }
+    
+    /* social */
+    h2 {margin-right: 1%;    }
+    
+	.btn {width:30%;}
+    /* footer */
+     .mini-title {
+        width: 70%;
+        font-size: 120%;
+    }
+    
+    .loyer-text{ 
+        font-size: 85%;
+        line-height: 1.4;
+    }
+    
+    ul.social-links { 
+		border-bottom: 1px solid #fff;
+		padding-bottom: 20px;
+    }
+    
+    ul.social-links li {
+        font-size: 200%;
+    }
+    
+    h4 {
+        font-size: 120%;
+    }
+    
+    input#lets-talk {
+        text-align: center;
+        font-size: 120%;
+    } 
+    
+    .coptrights {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* small tablets to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; } 
+    .main-banner-section h1 {        font-size: 400%;    }
+    
+    h2 { 
+        font-size: 200%;
+        margin-right: 1%;
+    }
+    .h4{line-height:1;}
+    /* benefits */
+    .benefit-strong-text {
+        margin-top: 15px;
+        font-size: 95%;
+    }
+    
+    .benefit-text {        font-size: 70%;    }
+    
+    /* footer */
+    footer { padding-top: 30px;    }
+    
+    footer div.col {
+      /*   width: 100%;
+        float: right;*/
+        margin-bottom: 30px;
+        padding-bottom: 30px; 
+    }
+    
+    footer div.col:first-child {         
+        border-bottom: solid 1px #555;
+    }
+    
+    footer div.loyer-col,
+    footer div.links-col {
+		float:right;
+        width: 48%;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    
+	.contact-icons ul li{margin:30px auto;}
+	.contact-icons ul li p{width:79%;}
+}
+/* small phonse to small tablets: from 481 to 767px */
+@media only screen and (max-width: 850px) {
+    
+    body { font-size: 16px; }
+	.hero-text-box{width:70%;}
+	   
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0; 
+    }
+    .sticky .main-nav { margin-top: 10px; }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .moblie-nav-icon { margin-top: 10px; }
+    .sticky .moblie-nav-icon i { color: #555; }
+    
+    /* .main-banner-section h1 { font-size: 180%; } */
+    h2 { font-size: 150%; }
+    .banner img{		left: 10px; width: 25%;     }
+    .privecy-section .row, .terms-section .row{width:inherit;}
+	.hero-text-box p{line-height:1;}
+	.table-responsive{overflow-x:scroll; overflow-y:hidden; border:1px solid #ccc; padding:5px;}
+}
+
+.visible-xs{display:none;}
+.collapse-button {    display: none;}
+@media (max-width:768px) {
+	.btn-full:link, .btn-full:visited{width:100%;}
+    .logo { float: left;   }
+    .logo img {    height: auto;}
+	header > nav .row{
+		background-color: #eee; padding:0;
+	}
+	#mainNav{
+		float: left; 
+		width: 100%;
+    }
+	#mainNav .nav-container{width:100%; display: none; padding:10px; background-color:#ddd; clear: both;}
+	#mainNav ul.main-nav{ 
+		width: 100%; margin:0;
+	}
+	#mainNav ul li {
+		display: block; 
+		width: 100%;
+		margin:0;
+	}
+	.main-nav li a:hover{background-color:#eee;}
+	.main-nav li a:link, .main-nav li a:visited{padding:5px;}
+	#mainNav li.Shape_6 {		display: none;	}
+	.collapse-button, .collapse-button:hover {
+		cursor: pointer;
+		display: block;
+		font-size: 14px;
+		padding: 5px 0;
+		float:right;
+		margin: 15px 10px 0 0;
+		padding: 5px 0;
+		position: relative;
+		text-align: center; 
+		width: 40px;
+	}
+	.collapse-button .icon-bar {
+		background-color: #000;
+		display: block;
+		height: 3px;
+		margin: 3px auto;
+		width: 20px;
+	}
+	
+	#camera-buttons{
+		right:auto;
+		left:0;
+	}
+	 footer div.col {
+        width: 100%;
+        float: right;
+	 }
+	 ul.social-links{width:100%;}
+	 
+	 /* Design page */
+	 .xs-mode{width:100%; margin:20px auto;}
+	 .fullwidth{width:100%; margin:0 auto;}
+	 .xs-mode .row{padding:0;}
+	 .visible-xs{display:block;}
+	 .hidden-xs{display:none;} 
+	 
+	 .benefit-img{width:100%;}
+	.priceinfo{width:100%;}
+	.benefit-section p{font-size: 140%; text-align: center;}
+	.benefit-text {text-align: center;}
+	.benefit-img img {    max-height: 130px;}
+	ul.camera-buttons{margin:0;}
+	 
+	.btn {width:40%;}
+	#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"]{width:100%;}
+}
+@media only screen and (max-width: 560px) {
+    /* discount */
+    .discount { font-size: 70%; }
+    .col { margin: 0 0 4% 0; } 
+    .main-nav {
+      	float: left;
+		margin: 0 auto;
+		width: 70%;
+     }
+	.hero-text-box{width:100%;}
+    /* main-banner */
+    .main-banner-section {
+		background-position: center center;
+		background-size: cover;
+	}
+    .main-banner-section h1 { 
+        /* font-size: 120%; */
+		line-height: 100px;
+		margin: 0 auto; 
+	}
+    .hero-text-box p { 
+	/* 	font-size:180%;
+		margin: 5px auto; */
+	}
+	.main-banner-section .btn-full:link, .main-banner-section .btn-full:visited{ 
+		margin:20px 0 10px;
+	} 
+	.sign-col, .price-col, .service-col {
+		border-bottom: 1px solid #8b8283;
+		border-right: 0 none;
+		padding: 0 30px;
+		width:100%;
+	}
+	.benefit-img img {max-height: inherit;}
+	.benefit-section hr{display:none;}
+    footer div.loyer-col, footer div.links-col, ul.important-links{width:100%;}
+    .coptrights p {
+		display: block;
+		float: left;
+		margin: 5px auto;
+		text-align: center;
+		width: 100%;
+	}
+	.form-col p {    width: 100%;}
+	.banner img{ top: 40%;    }
+	#contact-form{padding:30px 0;}
+	input.btn, .btn{ width: 60%;    }
+	.error-section p.btn{ width: 100%;    }
+	footer{  position: relative; padding:10px 0;}
+	.error-section{margin:0 auto;}
+	
+	.showcase li { 
+		padding: 10px 0;
+		position:relative;
+		width: 100% !important;
+	}
+	.section-showcase{margin:0 auto;}
+	.benefit-img {
+		display: block;
+		float: none;
+		margin: 0 auto !important;
+		position: relative;
+		width: 50%;
+	}
+	.itemdetails td {
+		display: block;
+		padding: 0 !important;
+		width: 100%;
+	}
+	
+}
+
+/* small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section { padding: 25px 0 0;    }
+    .contact-form , input.btn, .btn{ width: 100%;    }
+    .design-options row{padding:0;}
+	.design-options  .span-2-of-10 {
+		width: 18.72%;
+	}
+
+	.design-options  .span-4-of-10 {
+		width: 39.04%;
+	}
+	.option img{height: auto; padding:3px;}
+	.text-style-row img {
+		height: auto;
+	}
+}
+    
+@media only screen and (max-width: 360px) {
+
+}

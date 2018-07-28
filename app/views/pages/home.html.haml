@@ -1,0 +1,43 @@
+%section.main-banner-section
+  .scroll
+    %div
+      = image_tag('slider/slide1.jpg')
+      .hero-text-box
+        %h1
+          uniqueextracts
+        %p
+          Wind blown and sun grown
+    %div
+      = image_tag('slider/slide2.jpg')
+      .hero-text-box
+        %h1
+          uniqueextracts
+        %p
+          Wind blown and sun grown
+
+%section.benefit-section
+  %h2.sr-only Benefits
+  .row.benefit-row
+    .price-col.col.span-1-of-3
+      .row
+        .benefit-img.col.span-1-of-2
+          = image_tag('img/price.png', alt: "")
+        .col.span-1-of-2.priceinfo
+          %p.benefit-strong-text Benefit 1
+          %p.benefit-text Benefit line 1
+    .sign-col.col.span-1-of-3
+      .row
+        .benefit-img.col.span-1-of-2
+          = image_tag('img/sign.png', alt: "")
+        .col.span-1-of-2.priceinfo
+          %p.benefit-strong-text Benefit 2
+          %p.benefit-text Benefit line 2
+    .service-col.col.span-1-of-3
+      .row
+        .benefit-img.col.span-1-of-2
+          = image_tag('img/service.png', alt: "")
+        .col.span-1-of-3.priceinfo
+          %p.benefit-strong-text Benefit 3
+          %p.benefit-text Benefit line 3
+  %hr/
+= render "pages/ourproducts"

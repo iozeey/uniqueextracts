@@ -1,0 +1,66 @@
+.section-showcase {
+    margin: 40px 0;
+    padding: 0;
+    position: relative;
+}
+
+.title {
+    padding-right: 10px;
+}
+
+.showcase {
+    list-style: none;
+    width: 100%;
+    position: relative;
+
+    li{
+	    display: block;
+	    float: left;
+	    width: 25%;
+	    padding: 10px;
+    }
+
+	.specific { 
+		width: 50%; 
+	}
+}
+
+.showcase-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+	cursor: pointer;
+	img {
+	    width: 100%;
+	    height: auto;
+	    -webkit-transform: scale(1.15);
+	    transform: scale(1.15);
+	    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	    transition: opacity 0.5s, -webkit-transform 0.5s;
+	    transition: transform 0.5s, opacity 0.5s;
+	    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; 
+		&:hover {
+		    -webkit-transform: scale(1.03);
+		    transform: scale(1.03);
+		    opacity: 1;
+		}
+	}
+
+    figcaption.c-top {
+    	padding: 15px;
+    	text-align: center;
+	}
+}
+
+.specific {
+    width: 100%;
+    float: right;
+    bottom: 0;
+    position: absolute;
+    figure { 
+    	width: 100%;
+    	height: auto; 
+	}
+}
+

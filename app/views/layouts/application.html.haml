@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Uniqueextracts
+    = csrf_meta_tags
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    %meta{content: "#ffffff", name: "theme-color"}/
+    %meta{content: "resources/favicons/browserconfig.xml", name: "msapplication-config"}/
+    %meta{content: "description", name: "description"}/
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    / css
+    %link{href: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&subset=hebrew", rel: "stylesheet", type: "text/css"}/
+  %body
+    #container
+      = render 'layouts/navbar'
+      = yield
+      = render 'layouts/footer'
+    / scripts
+    %script{async: "", defer: "defer", src: "https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit"}
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    :javascript
+      $(document).ready(function(){
+        $('.scroll').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          autoplay:true,
+          cssEase: 'linear',
+        });
+      });

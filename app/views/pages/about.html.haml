@@ -1,0 +1,36 @@
+%section.contact-section
+  .map
+  .row
+    .col.span-12-of-12
+      .success-msg.success-big-msg
+  .row.form-col
+    .col.span-4-of-12.contact-icons
+      %ul
+        %li
+          %i.fa.fa-map-marker{"aria-hidden" => "true"}
+          %p Address goes here
+        %li
+          %i.fa.fa-phone{"aria-hidden" => "true"}
+          %p 03-301-91-81
+        %li
+          %i.fa.fa-envelope{"aria-hidden" => "true"}
+          %p contact@uniqueextracts.com
+    .col.span-7-of-12
+      %h1 Contact Us
+      %p We will be happy to help you with any request and inquiry request, our staff is waiting to hear from you!
+      .message
+      = form_tag '/contact',:id=>"form" do
+        .input-box
+          = label_tag :email, "Email", :id=>"your-email-label"
+          = text_field_tag :email, params[:email], class: "input" , id: "your-email-input", autocomplete: 'off',value: "zsh@sdf.com"
+        .input-box
+          = label_tag :name, "Name", :id=>"your-name-label"
+          = text_field_tag :name, params[:name], class: "input" , id: "your-name-input", autocomplete: 'off',value: "zsh@sdf.com"
+        .input-box
+          = label_tag :message, "Message", :id=>"your-msg-label"
+          = text_area_tag :message, params[:message], class: "input", id: "your-msg-input" ,rows: 2,value: "zsh@sdf.com"
+        .input-box
+          = recaptcha_tags
+        .input-box
+          = submit_tag 'Send', :id=>"lets-talk", type: "submit", value: "Send"
+        .loader

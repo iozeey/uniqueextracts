@@ -1,0 +1,355 @@
+/*
+    font color: #fff
+    active color: #ec008c
+    action color: #ff036c
+*/
+/*-------------------------------*/
+/* General */
+/*-------------------------------*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #010101;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    // max-width: 1500px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 250%;
+    padding: 20px 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 200%;
+    padding: 0 0 15px 0;
+    color: #ff036c;
+    font-weight: bold;
+    line-height: 1.047;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 150%;
+    padding: 15px 0;
+    line-height: 0.5;
+}
+
+.clearfix { zoom: 1; clear:both; }
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------------------------*/
+/*  main-banner-section   */
+/*------------------------*/
+
+.main-banner-section {
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+    margin-top: 14px !important;
+    padding-left: 2%; /*temp fix on slider*/
+}
+
+
+.hero-text-box {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    padding-left: 5%;
+    h1 {
+        font-size: 700%;
+        margin-top: 200px;
+        font-weight: 300;
+        line-height: 0.25;
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-size: 200%;
+        margin: 0 0 69px 0;
+        font-weight: 300;
+    }
+}
+.btn-full:link,
+.btn-full:visited {
+    display: inline-block;
+    margin: 40px 0 100px 0;
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    line-height: 2.025;
+    font-size: 150%;
+    right: 0;
+    color: #f4f4f4;
+    background-color: #ff036c;
+    padding: 7px 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-full:hover { background-color: rgba(255, 3, 108, 0.8) }
+
+/*-----------------------*/
+/* benefit-section */
+/*-----------------------*/
+.benefit-section {
+    margin-top: 60px;
+    position: relative;
+}
+
+.benefit-row {
+    padding-bottom: 60px;
+}
+
+.benefit-section p { 
+}
+
+.sign-col,
+.price-col,
+.service-col {
+    padding-right: 40px;
+}
+
+.sign-col,
+.price-col {
+    border-right: 1px solid #8b8283;
+}
+
+.benefit-img { 
+    position: relative;
+}
+.benefit-img img { float: right; }
+
+.service-col img { 
+    max-width: 60%; 
+    margin-right: 20px; 
+}
+
+.price-col img { max-width: 90%; }
+
+.sign-col img { max-width: 70%; }
+
+.benefit-strong-text {
+    margin-top: 50px;
+    color: #ff036c;
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.benefit-text {
+    font-size: 140%;
+    font-weight: 600;
+}
+
+.benefit-section hr {
+    width: 86%;
+    right: 7%;
+    bottom: -10%;
+    position: absolute;
+}
+
+/*---------------------------------*/
+/*            footer               */
+/*---------------------------------*/
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 70px;
+}
+
+.footer-right-details{
+    display: inline-block;
+    float: right;
+    margin-left: 25px;
+}
+
+.mini-title {
+    width: 60%;
+    font-size: 150%;
+    font-weight: 300;
+    float: right;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+
+.loyer-text{
+    width: 100%;
+    float: right;
+    display: block;
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: 90%;
+}
+
+ul.important-links {
+    width: 70%;
+    list-style: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff; 
+    float: right;
+    display: block;
+}
+
+.important-links li { 
+    margin-bottom: 30px;
+}
+
+.important-links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 300;
+    transition: color 0.5s;
+}
+
+.important-links a:hover {
+    color: rgb(255, 108, 169);
+}
+
+ul.social-links {
+    width: 70%;
+    list-style: none;
+    float: right;
+    display: block;
+    margin-top: 25px;
+}
+
+.social-links li {
+    display: inline;
+    float: right;
+    font-size: 250%;
+    margin-left: 50px;
+}
+
+.social-links a {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.instagram:hover {
+    color: #8a3ab9;
+}
+
+.youtube:hover {
+    color: #bb0000;
+}
+
+.contact h3 {
+    line-height: 0.7;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box label {
+    padding: 0 10px 15px 0;
+    font-size: 150%;
+    margin-bottom: 5px;
+    font-weight: 300;
+    z-index: 999;
+    cursor: text;
+    transition: .3s;
+    line-height: 34.5px;
+}
+
+.input-box input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #010101;
+    width: 100%;
+    padding: 35px 10px 10px 10px;
+    font-size: 150%;
+    transition: border-bottom 0.5s, font-size 0.5s;
+    margin-bottom: 10px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.input-box input:focus { 
+    border-bottom: 1px solid #ff036c;
+    outline: none;
+}
+
+label.active-label {
+    top: 0;
+    font-size: 100%;
+    height: inherit;
+}
+
+input#lets-talk {
+    margin-top: 40px;
+    font-size: 150%;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ff036c;
+    padding: 10px 20px;
+    float: left;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+input#lets-talk:hover { background-color: rgba(255, 3, 108, 0.9) }
+
+.coptrights {
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #555;
+    font-weight: 300;
+    p { 
+        display: inline;
+    }
+}
+
+.h4 {
+    font-weight: 500;
+    font-size: 150%;
+    padding: 15px 0;
+    line-height: 1;
+}
+
+/*----------------------*/
+/*       sr-only        */
+/*----------------------*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}

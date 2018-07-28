@@ -1,0 +1,53 @@
+/* Main Navi */
+.main-nav {
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    
+    li {
+        display: inline-block;
+        margin-right:  15px;
+        font-weight: bold;
+        a:link, a:visited {
+            padding: 8px 0 16px 0;
+            color: #010101;
+            text-decoration: none;
+            font-size: 120%;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.2s;
+            line-height: 1.801;
+        }
+
+        a:hover, a:active {
+            border-bottom: 2px solid #ff036c;
+        }
+
+        a.active{
+            border-bottom: 2px solid #ff036c;
+        }
+    }
+}
+
+.logo {
+    text-decoration: none;
+    margin-top: 7px;
+    a {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.Shape_6 {
+    border-width: 1px;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    background-color: rgb(234, 234, 234);
+    height: 35px;
+    vertical-align: sub;
+}

@@ -1,0 +1,26 @@
+%header
+  %nav
+    .row
+      #mainNav
+        %a#pull.collapse-button
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        .nav-container
+          .logo
+            %a{href: "/"}
+              = image_tag('logo.jpg', alt: "img of the website logo")
+              %span.sr-only Visit uniqueextracts.com
+          %ul.main-nav
+            %li= link_to "Home",  home_path, class: "#{nav_active_class request.path , home_path}"
+            %li.Shape_6
+            %li= link_to "About",  about_path, class: "#{nav_active_class request.path , about_path}"
+            %li.Shape_6
+            %li= link_to "Blog",   blog_path, class: "#{nav_active_class request.path , blog_path}"
+            %li.Shape_6
+            %li= link_to "Testing", testing_path, class: "#{nav_active_class request.path , testing_path}"
+            %li.Shape_6
+            %li= link_to "Video", videos_path, class: "#{nav_active_class request.path , videos_path}"
+            %li.Shape_6
+            %li= link_to "Photos", photos_path, class: "#{nav_active_class request.path , photos_path}"
+          .clearfix
