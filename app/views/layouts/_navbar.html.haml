@@ -2,6 +2,7 @@
   %nav
     .row
       #mainNav
+        = image_tag('logo-text.jpg', alt: "img of the website logo", class: "m-logo")
         %a#pull.collapse-button
           %span.icon-bar
           %span.icon-bar
@@ -9,7 +10,7 @@
         .nav-container
           .logo
             %a{href: "/"}
-              = image_tag('logo.jpg', alt: "img of the website logo")
+              = image_tag('logo.jpg', alt: "img of the website logo", class: "d-logo")
               %span.sr-only Visit uniqueextracts.com
           %ul.main-nav
             %li= link_to "Home",  home_path, class: "#{nav_active_class request.path , home_path}"

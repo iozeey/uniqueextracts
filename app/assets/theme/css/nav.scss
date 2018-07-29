@@ -42,6 +42,12 @@
         max-width: 100%;
     }
 }
+.d-logo{
+    display: block;
+}
+.m-logo{
+    display: none;
+}
 
 .Shape_6 {
     border-width: 1px;
@@ -50,4 +56,11 @@
     background-color: rgb(234, 234, 234);
     height: 35px;
     vertical-align: sub;
+}
+
+.main-banner-bg{
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }

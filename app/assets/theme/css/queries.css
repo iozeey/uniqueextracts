@@ -1,9 +1,8 @@
-
-				.table-responsive > table{width:100%;  border-collapse: collapse;}
-				.table-responsive > table tr{  border-bottom:1px solid #ccc;  }
-				.table-responsive > table th{ padding:10px; }
-				.table-responsive > table td{ padding:10px; vertical-align:top; }
-				.itemdetails {  }
+.table-responsive > table{width:100%;  border-collapse: collapse;}
+.table-responsive > table tr{  border-bottom:1px solid #ccc;  }
+.table-responsive > table th{ padding:10px; }
+.table-responsive > table td{ padding:10px; vertical-align:top; }
+.itemdetails {  }
 				
 /* width screens */
 @media only screen and (max-width: 1550px) { 
@@ -12,8 +11,10 @@
         padding: 0 4%; 
     }
     
-    .main-banner-section h1 {
-        font-size: 650%;
+    .main-banner-section {
+        h1 {
+            font-size: 650%;
+        }
     }
     
     /* benefits */
@@ -50,7 +51,7 @@
         line-height: 1.4;
     }
     
-  ul.important-links,  ul.social-links {
+    ul.important-links,  ul.social-links {
         width: 100%;
     }
     
@@ -70,9 +71,13 @@
 
 /* big tablet to 1240px: widths smaller that the 1140px row */
 @media only screen and (max-width: 1240px) {
-    .main-banner-section h1 {font-size: 500%;    }
+    .main-banner-section {
+        h1 {
+            font-size: 500%;
+        }
+    }
     
-    /* .hero-text-box p { font-size: 150%;    } */
+    .hero-text-box p { font-size: 150%; } 
     
     .row { padding: 0 4%; }
     
@@ -126,12 +131,12 @@
 /* small tablets to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     body { font-size: 18px; } 
-    .main-banner-section h1 {        font-size: 400%;    }
-    
+
     h2 { 
         font-size: 200%;
         margin-right: 1%;
     }
+
     .h4{line-height:1;}
     /* benefits */
     .benefit-strong-text {
@@ -139,7 +144,9 @@
         font-size: 95%;
     }
     
-    .benefit-text {        font-size: 70%;    }
+    .benefit-text { 
+        font-size: 70%; 
+    }
     
     /* footer */
     footer { padding-top: 30px;    }
@@ -170,7 +177,7 @@
 @media only screen and (max-width: 850px) {
     
     body { font-size: 16px; }
-	.hero-text-box{width:70%;}
+	/*.hero-text-box{width:70%;}*/
 	   
     .main-nav li a:link,
     .main-nav li a:visited {
@@ -183,12 +190,15 @@
     .sticky .main-nav li a:visited { padding: 10px 0; }
     .sticky .moblie-nav-icon { margin-top: 10px; }
     .sticky .moblie-nav-icon i { color: #555; }
-    
-    /* .main-banner-section h1 { font-size: 180%; } */
+
     h2 { font-size: 150%; }
     .banner img{		left: 10px; width: 25%;     }
     .privecy-section .row, .terms-section .row{width:inherit;}
-	.hero-text-box p{line-height:1;}
+    .hero-text-box p { 
+        line-height:1;
+        font-size:180%;
+        margin: 5px auto; 
+    }
 	.table-responsive{overflow-x:scroll; overflow-y:hidden; border:1px solid #ccc; padding:5px;}
 }
 
@@ -196,13 +206,28 @@
 .collapse-button {    display: none;}
 @media (max-width:768px) {
 	.btn-full:link, .btn-full:visited{width:100%;}
-    .logo { float: left;   }
-    .logo img {    height: auto;}
+    
+    .logo { 
+        
+        clear: both;        
+        img{    
+            height: auto;
+        }
+    }
+    .d-logo{
+        display: none;
+    }
+    .m-logo{
+        display: block;
+    }
+
 	header > nav .row{
-		background-color: #eee; padding:0;
+        padding:0;
+        border-bottom: 1px solid #777;
 	}
+
 	#mainNav{
-		float: left; 
+		float: left;
 		width: 100%;
     }
 	#mainNav .nav-container{width:100%; display: none; padding:10px; background-color:#ddd; clear: both;}
@@ -263,8 +288,22 @@
 	 
 	.btn {width:40%;}
 	#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"]{width:100%;}
+
+    .main-banner-bg{
+        background-size: contain;
+    }
+        .main-banner-section {
+        h1 {
+            font-size: 500%;
+        }
+    }
+
 }
 @media only screen and (max-width: 560px) {
+    .main-banner-bg{
+        height: 200px;
+        background-size: contain;
+    }
     /* discount */
     .discount { font-size: 70%; }
     .col { margin: 0 0 4% 0; } 
@@ -272,22 +311,23 @@
       	float: left;
 		margin: 0 auto;
 		width: 70%;
+        flex-direction: column;
+        li {
+            justify-content: center;
+            align-items: center;
+        }
      }
 	.hero-text-box{width:100%;}
     /* main-banner */
     .main-banner-section {
-		background-position: center center;
-		background-size: cover;
+		width: 97%;
 	}
     .main-banner-section h1 { 
-        /* font-size: 120%; */
+        font-size: 375%; 
 		line-height: 100px;
 		margin: 0 auto; 
 	}
-    .hero-text-box p { 
-	/* 	font-size:180%;
-		margin: 5px auto; */
-	}
+   
 	.main-banner-section .btn-full:link, .main-banner-section .btn-full:visited{ 
 		margin:20px 0 10px;
 	} 

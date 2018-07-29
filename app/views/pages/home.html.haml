@@ -1,19 +1,15 @@
 %section.main-banner-section
   .scroll
-    %div
-      = image_tag('slider/slide1.jpg')
-      .hero-text-box
-        %h1
-          uniqueextracts
-        %p
-          Wind blown and sun grown
-    %div
-      = image_tag('slider/slide2.jpg')
-      .hero-text-box
-        %h1
-          uniqueextracts
-        %p
-          Wind blown and sun grown
+    %div.main-banner-bg(style="background-image: url( #{asset_url('slider/slide1.jpg')} );")      
+      %h1
+        uniqueextracts
+      %p
+        Wind blown and sun grown
+    %div.main-banner-bg(style="background-image: url( #{asset_url('slider/slide2.jpg')} );")       
+      %h1
+        uniqueextracts
+      %p
+        Wind blown and sun grown
 
 %section.benefit-section
   %h2.sr-only Benefits
